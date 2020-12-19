@@ -9,9 +9,21 @@ var eyeFlicker = [26.8, 27.9, 23.7, 25, 26.3, 24.8,
 // @TODO: Complete the Following Steps
 
 // Create the Trace
+var trace = [{
+  x: eyeColor,
+  y: eyeFlicker,
+  name: "EyeFlickers",
+  type: "bar"
+},
 
+];
 // Create the data array for our plot
 
 // Define our plot layout
-
+var layout = {
+  title: "Eye Colors vs Flickers",
+  xaxis: {title: "Eye Flickers"},
+  
+};
 // Plot the chart to a div tag with id "bar-plot"
+Plotly.newPlot("bar", trace, layout);
